@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router";
 import { FadeIn } from "./FadeIn";
 import { Star, MapPin } from "lucide-react";
+import logoImg from "../../assets/491901836_17857219329416589_8599635378957656780_n_(1).jpg";
 
 const HERO_IMG =
   "https://images.unsplash.com/photo-1643058395173-f82e3b9050af?w=1920&h=1080&fit=crop&auto=format";
@@ -67,66 +68,21 @@ export function Home() {
 
         {/* Content */}
         <div style={{ position: "relative", zIndex: 1, padding: "0 1.5rem" }}>
-          {/* Logo mark — ornamental circle */}
+          {/* Logo mark */}
           <div
             style={{
-              width: "160px",
-              height: "160px",
-              borderRadius: "50%",
-              border: "1px solid rgba(201,150,58,0.5)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              width: "180px",
+              height: "180px",
               margin: "0 auto 2.5rem",
-              position: "relative",
+              borderRadius: "50%",
+              overflow: "hidden",
             }}
           >
-            <div
-              style={{
-                width: "140px",
-                height: "140px",
-                borderRadius: "50%",
-                border: "1px solid rgba(201,150,58,0.3)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div style={{ textAlign: "center" }}>
-                <div
-                  style={{
-                    fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "1.4rem",
-                    fontWeight: 600,
-                    color: "#C9963A",
-                    letterSpacing: "0.08em",
-                    lineHeight: 1,
-                  }}
-                >
-                  E
-                </div>
-                <div
-                  style={{
-                    width: "32px",
-                    height: "1px",
-                    backgroundColor: "#C9963A",
-                    margin: "6px auto",
-                    opacity: 0.6,
-                  }}
-                />
-                <div
-                  style={{
-                    fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: "0.55rem",
-                    fontWeight: 500,
-                    color: "#E0B060",
-                    letterSpacing: "0.2em",
-                  }}
-                >
-                  EST. LES
-                </div>
-              </div>
-            </div>
+            <img
+              src={logoImg}
+              alt="Embriago Coffee logo"
+              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+            />
           </div>
 
           {/* Red wordmark headline */}
